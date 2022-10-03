@@ -1,0 +1,106 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  margin-bottom: -25px;
+}
+.container .top {
+  color: #5e17eb;
+  display: flex;
+  height: 40px;
+}
+.container .top :hover {
+  cursor: pointer;
+}
+.container .top p {
+  margin: auto !important;
+}
+.container .bottom {
+  background: linear-gradient(to bottom, #5e17eb, #1b1b1b);
+  height: 100%;
+}
+.container .bottom .s0 {
+  margin-left: 5%;
+  text-align: left;
+  padding-top: 3vh;
+  color: white;
+}
+.container .bottom .s0 h1 {
+  font-size: 5vh;
+}
+.container .bottom .s0 p {
+  margin-top: -20px;
+  font-size: 3vh;
+}
+.container .bottom .s1 {
+  display: flex;
+  margin-left: 5%;
+  gap: 40vw;
+  margin-bottom: 50px;
+}
+.container .bottom .s1 .social {
+  display: flex;
+  gap: 10px;
+  font-size: 4vh;
+}
+.container .bottom .s1 .social span {
+  color: white;
+}
+.container .bottom .s1 .social span :hover {
+  cursor: pointer;
+}
+.container .bottom .s1 .email p {
+  color: white;
+  text-align: left;
+  font-size: 3vh;
+}
+.container .bottom .s1 .email input {
+  width: 20vw;
+  border-radius: 5px;
+  border: 1px solid #5e17eb;
+  height: 5vh;
+  padding-left: 5px;
+}
+.container .bottom .s1 .email input :focus {
+  border: none;
+}
+.container .bottom .s1 .email button {
+  background-color: white;
+  color: #5e17eb;
+  width: 10vw;
+  border-radius: 5px;
+  border: 1px solid #5e17eb;
+  height: 5vh;
+  font-weight: bold;
+  margin-top: -2px;
+}
+.container .bottom .s1 .email button:hover {
+  cursor: pointer;
+}
+.container .bottom .s2 {
+  padding-left: 5%;
+  text-align: left;
+  list-style: none;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.container .bottom .s2 .footer-box h2 {
+  font-size: 5vh;
+}
+.container .bottom .s2 p {
+  line-height: 0.4;
+  font-size: 2vh;
+  text-align: left;
+  color: white;
+}
+.container .footer-info {
+  color: white;
+}
+.container .footer-info h2 {
+  font-size: 4vh;
+}
+.container .footer-info p {
+  margin-top: -15px;
+  font-size: 2.5vh;
+}

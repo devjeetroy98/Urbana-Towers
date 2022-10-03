@@ -1,0 +1,84 @@
+.filter-body {
+  display: flex;
+}
+.filter-body .left-panel {
+  background-color: white;
+  width: 28%;
+  color: #5e17eb;
+  border-right: 1px solid #a9a9a9a9;
+}
+.filter-body .left-panel .s1,
+.filter-body .left-panel .s2,
+.filter-body .left-panel .s3,
+.filter-body .left-panel .s4,
+.filter-body .left-panel .s5 {
+  padding-left: 8px;
+  color: #808080;
+  width: 100%;
+  text-align: left;
+}
+.filter-body .left-panel .active {
+  color: #5e17eb !important;
+}
+.filter-body .left-panel .s1:hover,
+.filter-body .left-panel .s2:hover,
+.filter-body .left-panel .s3:hover,
+.filter-body .left-panel .s4:hover,
+.filter-body .left-panel .s5:hover {
+  cursor: pointer;
+}
+.right-panel {
+  width: 60%;
+  margin-left: 3vw;
+  margin: 0 auto;
+}
+.right-panel .location-filter label p {
+  font-size: 2.2vh;
+  color: #5e17eb;
+}
+.right-panel .location-filter label select {
+  width: 90%;
+  height: 5vh;
+  border: 1px solid #a9a9a9a9;
+}
+.right-panel .location-filter label select:hover {
+  cursor: pointer;
+}
+.right-panel .price-filter label p {
+  font-size: 2.2vh;
+  color: #5e17eb;
+}
+.right-panel .price-filter input {
+  width: 100%;
+  height: 5vh;
+}
+.right-panel .config-filter label span {
+  font-size: 2.2vh;
+  color: #5e17eb;
+  padding-left: 0.5vw;
+}
+.right-panel .config-filter label input {
+  font-size: 2.2vh;
+  margin-top: 2vh !important;
+}
+.right-panel .carpet-filter label p {
+  font-size: 2.2vh;
+  color: #5e17eb;
+}
+.right-panel .carpet-filter input {
+  width: 100%;
+  height: 5vh;
+}
+.right-panel .furnish-filter label span {
+  font-size: 2.2vh;
+  color: #5e17eb;
+  padding-left: 0.5vw;
+}
+.right-panel .furnish-filter label input {
+  font-size: 2.2vh;
+  margin-top: 2vh !important;
+}
+.right-panel .furnish-filter label p {
+  font-size: 2.2vh;
+  color: #5e17eb;
+}

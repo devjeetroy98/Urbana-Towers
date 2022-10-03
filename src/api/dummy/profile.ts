@@ -1,0 +1,66 @@
+import User from "../../interfaces/User";
+
+const users: Array<User> = [
+  {
+    id: 1,
+    firstName: "Devjeet",
+    lastName: "Roy",
+    address: "123/A RMC Lane, Kolkata: 700078",
+    gender: "Male",
+    profilePic: "/UrbanaAssets/User-Male.jpg",
+    profileRating: 8.9,
+    phoneNumber: "(+91) 9892882721",
+  },
+  {
+    id: 2,
+    firstName: "Joy",
+    lastName: "Saha",
+    address: "19/C James Lane, Bangalore: 300078",
+    gender: "Male",
+    profilePic: "/UrbanaAssets/User-Male.jpg",
+    profileRating: 9.3,
+    phoneNumber: "(+91) 9892882721",
+  },
+  {
+    id: 3,
+    firstName: "Meghna",
+    lastName: "Adhikary",
+    address: "134 CM Lane, Orissa: 500078",
+    gender: "Female",
+    profilePic: "/UrbanaAssets/User-Female.jpg",
+    profileRating: 8.3,
+    phoneNumber: "(+91) 9892882721",
+  },
+  {
+    id: 4,
+    firstName: "John",
+    lastName: "Doe",
+    address: "123/A RMC Lane, Kolkata: 700078",
+    gender: "Male",
+    profilePic: "/UrbanaAssets/User-Male.jpg",
+    profileRating: 7.5,
+    phoneNumber: "(+91) 9892882721",
+  },
+  {
+    id: 5,
+    firstName: "Sneha",
+    lastName: "Sen",
+    address: "56 Gandhi Sarani, Varanasi: 300078",
+    gender: "Female",
+    profilePic: "/UrbanaAssets/User-Female.jpg",
+    profileRating: 9.6,
+    phoneNumber: "(+91) 9892882721",
+  },
+  {
+    id: 6,
+    firstName: "Devjyoti",
+    lastName: "Ghosal",
+    address: "123/A RMC Lane, Kolkata: 700078",
+    gender: "Male",
+    profilePic: "/UrbanaAssets/User-Male.jpg",
+    profileRating: 8.5,
+    phoneNumber: "(+91) 9892882721",
+  },
+];
+
+export default users;

@@ -1,0 +1,8 @@
+.bar-chart-container {
+  height: 100%;
+  width: auto;
+}
+.bar-chart-container canvas {
+  height: 100% !important;
+  width: auto !important;
+}

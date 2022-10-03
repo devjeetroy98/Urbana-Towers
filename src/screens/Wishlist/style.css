@@ -1,0 +1,57 @@
+.container-apartments {
+  margin: 30px;
+}
+.container-apartments .filters {
+  margin-top: 13vh !important;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-apartments .filters .lp p {
+  font-size: 5vh;
+  padding-left: 1vw;
+  color: #333;
+}
+.container-apartments .filters .rp .sq-box {
+  display: flex;
+  gap: 1vw;
+}
+.container-apartments .filters .rp button:first-child {
+  height: 7vh;
+  width: 10vw;
+  background: linear-gradient(to right, #b91d73, #5e17eb);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2.5vh;
+}
+.container-apartments .filters .rp button:first-child:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+.container-apartments .apartments {
+  margin-top: 5vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.container-apartments .filters .rp button:last-child {
+  height: 7vh;
+  width: 8vw;
+  background: white;
+  color: #5e17eb;
+  border: 1px solid #5e17eb;
+  border-radius: 5px;
+  font-size: 2.5vh;
+}
+.container-apartments .filters .rp button:last-child:hover {
+  cursor: pointer;
+  /* box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1); */
+  background-color: #dad1ee;
+}
+.container-apartments .apartments > * {
+  flex: 0 0 23%;
+  margin: 1% 1%;
+}
