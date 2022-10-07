@@ -35,7 +35,7 @@ const Home: FC = () => {
               </button>
               <button type="button">
                 <ClockCircleOutlined style={{ fontSize: "18px" }} />
-                SCHEDULE A DISCOVERY CALL
+                SCHEDULE A CALL
               </button>
             </div>
           </div>

@@ -105,7 +105,7 @@
   font-size: 2.5vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .container .bottom .s1 {
     display: block;
     margin-left: 5%;
