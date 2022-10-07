@@ -211,6 +211,7 @@ body {
   }
   .container-fluid .main .top {
     height: auto !important;
+    font-size: 4vh;
   }
   .container-fluid .main .middle {
     height: auto !important;
@@ -260,6 +261,11 @@ body {
     margin-left: 5%;
     margin-right: 5%;
   }
+  .container-fluid .customer .top p {
+    font-size: 4vh !important;
+    text-align: left;
+    padding-left: 5%;
+  }
   .container-fluid .customer .middle-sm .shadow-sm {
     display: block;
     height: auto;
@@ -271,6 +277,6 @@ body {
   .container-fluid .customer .middle-sm .anticon svg {
     height: 50px;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 3vh;
   }
 }

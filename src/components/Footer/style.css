@@ -129,10 +129,10 @@
     display: none;
   }
   .container .footer-info h2 {
-    font-size: 3vh !important;
+    font-size: 2.5vh !important;
   }
   .container .footer-info p {
     margin-top: 0px;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
   }
 }
