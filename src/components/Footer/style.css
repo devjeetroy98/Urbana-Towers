@@ -104,3 +104,35 @@
   margin-top: -15px;
   font-size: 2.5vh;
 }
+
+@media only screen and (max-width: 768px) {
+  .container .bottom .s1 {
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 50px;
+  }
+  .container .bottom .s1 .email {
+    text-align: left;
+    margin-top: 5vh;
+  }
+  .container .bottom .s1 .email input {
+    width: 55vw;
+    border-radius: 5px;
+    border: 1px solid #5e17eb;
+    height: 5vh;
+    padding-left: 5px;
+  }
+  .container .bottom .s1 .email button {
+    width: 20vw;
+  }
+  .container .bottom .s2 {
+    display: none;
+  }
+  .container .footer-info h2 {
+    font-size: 3vh !important;
+  }
+  .container .footer-info p {
+    margin-top: 0px;
+    font-size: 2.5vh;
+  }
+}
