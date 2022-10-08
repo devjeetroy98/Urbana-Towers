@@ -85,6 +85,7 @@
 
 @media only screen and (max-width: 768px) {
   .filter-body {
+    overflow: hidden !important;
     height: 25vh !important;
   }
   .filter-body .left-panel {
@@ -104,10 +105,10 @@
     font-size: 4vw !important;
   }
   .right-panel select {
-    font-size: 2vw !important;
+    font-size: 2vh !important;
   }
   .right-panel select option {
-    font-size: 2vw !important;
+    font-size: 2vh !important;
     width: 50vw !important;
   }
 }
