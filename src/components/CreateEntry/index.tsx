@@ -35,10 +35,12 @@ const CreateEntryForm: FC = () => {
 
   const next = () => {
     setCurrent(current + 1);
+    window.scrollTo(0, 0);
   };
 
   const prev = () => {
     setCurrent(current - 1);
+    window.scrollTo(0, 0);
   };
   return (
     <div className="create-entry-section">

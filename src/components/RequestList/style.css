@@ -107,3 +107,37 @@
     width: 30vw !important;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .content {
+    display: block;
+  }
+  .parent-long-card {
+    width: 80vw;
+    margin: 0 auto !important;
+  }
+  .parent-long-card .long-card {
+    padding-left: 2vh;
+  }
+  .parent-long-card .long-card .left img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+  }
+  .parent-long-card .long-card .mid {
+    padding-left: 1vw;
+    font-size: 2vh;
+  }
+  .parent-long-card .long-card .info {
+    color: white;
+    padding-left: 1vw;
+    font-size: 2vh;
+  }
+  .parent-long-card .request {
+    font-size: 2.2vh;
+    padding-left: 2vh;
+  }
+  .parent-long-card .action-buttons button {
+    width: 30vw !important;
+    height: 4vh;
+  }
+}

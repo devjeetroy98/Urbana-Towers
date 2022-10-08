@@ -14,3 +14,12 @@
     height: 45vh;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .graph-section {
+    display: block;
+  }
+  .graph-section div {
+    width: 80vw;
+    height: 45vh;
+  }
+}

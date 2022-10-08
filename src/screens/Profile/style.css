@@ -55,12 +55,7 @@
   width: auto !important;
 }
 
-
-
-
-
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .profile-section .header {
     display: block;
   }
@@ -80,20 +75,5 @@
   .profile-section .header .self p:last-child {
     font-size: 2vh;
     margin-top: 1vh;
-  }
-  .real-estate-section {
-    margin-top: 5vh;
-    display: block;
-  }
-  .real-estate-section > * {
-    width: 90vw;
-    margin-top: 3vh;
-  }
-  .graph-section {
-    display: block;
-  }
-  .graph-section div {
-    width: 90vw;
-    height: 45vh;
   }
 }

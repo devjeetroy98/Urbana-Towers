@@ -15,3 +15,16 @@
 .create-entry-section .steps-action {
   margin-top: 10px;
 }
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .create-entry-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .create-entry-section .steps-content {
+    min-height: auto !important;
+  }
+  .create-entry-section .steps-action {
+    margin-top: 0px;
+  }
+}

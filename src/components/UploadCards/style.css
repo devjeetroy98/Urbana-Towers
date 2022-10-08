@@ -75,3 +75,22 @@
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .upload-card {
+    width: 100%;
+    margin-top: 1vh !important;
+  }
+  .upload-card .wishlist-time {
+    font-size: 2vh !important;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 992px) {
+  .upload-card {
+    width: 70%;
+    margin: 0 auto !important;
+    margin-top: 2vh !important;
+  }
+  .upload-card .wishlist-time {
+    font-size: 2vh !important;
+  }
+}
