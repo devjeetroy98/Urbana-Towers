@@ -85,10 +85,6 @@ const FilterModal: FC<any> = (props: {
     });
   };
 
-  useEffect(() => {
-    console.log("RENDERING");
-  });
-
   return (
     <div className="container-modal">
       <Modal
