@@ -55,3 +55,48 @@
 .notification-container .rc-pagination-item-active a {
   color: #5e17eb !important;
 }
+
+@media only screen and (max-width: 768px) {
+  .notification-container .notifications {
+    height: auto;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .notification-container .header {
+    width: 80vw !important;
+    margin: 0 auto;
+    font-size: 3vh;
+  }
+  .notification-container .notifications .notification .top {
+    display: flex;
+    gap: 1vw;
+    font-size: 2vh;
+  }
+  .notification-container .notifications .notification .bottom {
+    color: #616161a9;
+    text-align: right;
+    font-size: 2vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .notification-container .notifications {
+    height: auto;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .notification-container .header {
+    width: 80vw !important;
+    margin: 0 auto;
+    font-size: 3vh;
+  }
+  .notification-container .notifications .notification .top {
+    display: flex;
+    gap: 1vw;
+    font-size: 2.2vh;
+  }
+  .notification-container .notifications .notification .bottom {
+    color: #616161a9;
+    text-align: right;
+    font-size: 2.2vh;
+  }
+}
