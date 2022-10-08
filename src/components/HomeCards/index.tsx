@@ -1,7 +1,11 @@
 import { HeartOutlined, SendOutlined } from "@ant-design/icons";
-import React, { FC } from "react";
+import React, { FC, memo } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
+
+const areEqual = (prevProps: any, nextProps: any) => {
+  return prevProps.id === nextProps.id;
+};
 
 const HomeCards: FC<any> = (props) => {
   const { data } = props;
@@ -48,4 +52,4 @@ const HomeCards: FC<any> = (props) => {
   );
 };
 
-export default HomeCards;
+export default memo(HomeCards, areEqual);

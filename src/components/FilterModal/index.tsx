@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useEffect, useState, memo } from "react";
 import { Modal, Button } from "antd";
 import stateLists from "../../api/dummy/state";
 import "./style.css";
@@ -376,4 +376,4 @@ const FilterModal: FC<any> = (props: {
   );
 };
 
-export default FilterModal;
+export default memo(FilterModal);

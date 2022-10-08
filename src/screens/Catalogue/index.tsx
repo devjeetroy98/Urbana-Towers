@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useCallback, useRef, useEffect } from "react";
 import "./style.css";
 import { FilterOutlined } from "@ant-design/icons";
 import FilterModal from "../../components/FilterModal";
@@ -7,7 +7,8 @@ import apartments from "../../api/dummy/apartments";
 
 const Catalogue: FC = () => {
   const [showModal, setShowModal] = useState(false);
-  const [filterData, setFilterData] = useState({
+  const [houses, setHouses] = useState([] as any);
+  const filterData = useRef({
     state: "",
     city: "",
     price: 0,
@@ -16,29 +17,43 @@ const Catalogue: FC = () => {
     furnishingStatus: "Unfurnished",
   });
 
-  const handleFilterModal = (data: any) => {
-    setShowModal(data);
-  };
+  const handleFilterModal = useCallback(
+    (data: any) => {
+      setShowModal(data);
+    },
+    [showModal],
+  );
 
   const viewFullScreenFilter = () => {
     setShowModal(true);
   };
 
-  const applyChanges = (data: any) => {
-    console.log(data);
-    setFilterData(data);
-  };
+  const applyChanges = useCallback(
+    (data: any) => {
+      console.log(data);
+      filterData.current = data;
+    },
+    [filterData.current],
+  );
 
   const resetFilter = () => {
-    setFilterData({
+    filterData.current = {
       state: "",
       city: "",
       price: 0,
       configuration: 1,
       carpetArea: 500,
       furnishingStatus: "Unfurnished",
-    });
+    };
   };
+
+  useEffect(() => {
+    setHouses(apartments);
+  }, []);
+
+  useEffect(() => {
+    console.log("RENDERING");
+  });
 
   return (
     <div className="container-apartments">
@@ -48,7 +63,12 @@ const Catalogue: FC = () => {
         </div>
         <div className="rp">
           <div className="sq-box">
-            <button type="button" onClick={() => viewFullScreenFilter()}>
+            <button
+              type="button"
+              onClick={() => {
+                viewFullScreenFilter();
+              }}
+            >
               Filters <FilterOutlined />
             </button>
             <button type="button" onClick={() => resetFilter()}>
@@ -58,7 +78,7 @@ const Catalogue: FC = () => {
         </div>
       </div>
       <div className="apartments">
-        {apartments.map((data: any) => {
+        {houses.map((data: any) => {
           return <HomeCards data={data} key={data.id} />;
         })}
       </div>
@@ -66,7 +86,7 @@ const Catalogue: FC = () => {
         <FilterModal
           applyChanges={applyChanges}
           handleFilterModal={handleFilterModal}
-          filterData={filterData}
+          filterData={filterData.current}
         />
       )}
     </div>
