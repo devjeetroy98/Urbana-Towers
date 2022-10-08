@@ -51,10 +51,6 @@ const Catalogue: FC = () => {
     setHouses(apartments);
   }, []);
 
-  useEffect(() => {
-    console.log("RENDERING");
-  });
-
   return (
     <div className="container-apartments">
       <div className="filters">

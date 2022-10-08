@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState, memo } from "react";
+import React, { FC, useEffect, useState, memo, useRef } from "react";
 import { Modal, Button } from "antd";
 import stateLists from "../../api/dummy/state";
 import "./style.css";
@@ -9,7 +9,7 @@ const FilterModal: FC<any> = (props: {
   filterData: any;
 }) => {
   const { applyChanges, handleFilterModal, filterData } = props;
-  const [isOpen, setIsOpen] = useState(true);
+  const isOpen = useRef(true);
   const [currentFilterTab, setCurrentFilterTab] = useState("Location");
   const [states, setStates] = useState([{ id: 0, name: "All", cities: [] }]);
   const [cities, setCities] = useState([]);
@@ -23,12 +23,12 @@ const FilterModal: FC<any> = (props: {
   });
 
   const handleClose = () => {
-    setIsOpen(false);
+    isOpen.current = false;
     handleFilterModal(false);
   };
 
   const applyFilter = () => {
-    setIsOpen(false);
+    isOpen.current = false;
     handleFilterModal(false);
     applyChanges(formData);
   };
@@ -85,11 +85,15 @@ const FilterModal: FC<any> = (props: {
     });
   };
 
+  useEffect(() => {
+    console.log("RENDERING");
+  });
+
   return (
     <div className="container-modal">
       <Modal
         title="Filter"
-        open={isOpen}
+        open={isOpen.current}
         onCancel={() => handleClose()}
         footer={[
           <Button
