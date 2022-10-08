@@ -1,5 +1,6 @@
 .filter-body {
   display: flex;
+  height: 25vh !important;
 }
 .filter-body .left-panel {
   background-color: white;
