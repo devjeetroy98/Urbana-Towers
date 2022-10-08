@@ -4,8 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./style.css";
 
 const areEqual = (prevProps: any, nextProps: any) => {
-  console.log(prevProps.id === nextProps.id);
-  return prevProps.id === nextProps.id;
+  return prevProps.data.id === nextProps.data.id;
 };
 
 const WishlistCards: FC<any> = (props) => {

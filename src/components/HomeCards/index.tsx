@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./style.css";
 
 const areEqual = (prevProps: any, nextProps: any) => {
-  return prevProps.id === nextProps.id;
+  return prevProps.data.id === nextProps.data.id;
 };
 
 const HomeCards: FC<any> = (props) => {
