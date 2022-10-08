@@ -55,3 +55,55 @@
   flex: 0 0 23%;
   margin: 1% 1%;
 }
+@media only screen and (max-width: 768px) {
+  .container-apartments .filters {
+    margin-top: 13vh !important;
+    height: auto !important;
+    width: 100%;
+    display: block !important;
+  }
+  .container-apartments .filters .lp p {
+    font-size: 3.5vh !important;
+    text-align: left;
+    padding-left: 1vw;
+    color: #333;
+  }
+  .container-apartments .apartments {
+    margin-top: 5vh;
+    display: block !important;
+  }
+  .container-apartments .filters .rp .sq-box {
+    justify-content: flex-end !important;
+  }
+  .container-apartments .filters .rp button {
+    height: 5vh !important;
+    width: 15vh !important;
+    font-size: 2.5vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .container-apartments .filters {
+    margin-top: 13vh !important;
+    height: auto !important;
+    width: 100%;
+    display: block !important;
+  }
+  .container-apartments .filters .lp p {
+    font-size: 5vh !important;
+    text-align: left;
+    padding-left: 1vw;
+    color: #333;
+  }
+  .container-apartments .apartments {
+    margin-top: 5vh;
+    display: block !important;
+  }
+  .container-apartments .filters .rp .sq-box {
+    justify-content: flex-end !important;
+  }
+  .container-apartments .filters .rp button {
+    height: 7vh !important;
+    width: 18vh !important;
+    font-size: 2.5vh;
+  }
+}

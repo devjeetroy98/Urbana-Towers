@@ -82,3 +82,62 @@
   font-size: 2.2vh;
   color: #5e17eb;
 }
+
+@media only screen and (max-width: 768px) {
+  .filter-body {
+    height: 25vh !important;
+  }
+  .filter-body .left-panel {
+    width: 40%;
+    font-size: 4vw;
+  }
+  .filter-body .left-panel button {
+    font-size: 1.8vh !important;
+  }
+  .right-panel {
+    margin-left: 2vw;
+    width: 55%;
+    margin-left: 3vw;
+    margin: 0 auto;
+  }
+  .right-panel label p {
+    font-size: 4vw !important;
+  }
+  .right-panel select {
+    font-size: 2vw !important;
+  }
+  .right-panel select option {
+    font-size: 2vw !important;
+    width: 50vw !important;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .ant-modal {
+    width: 80vw !important;
+  }
+  .filter-body {
+    height: 30vh !important;
+  }
+  .filter-body .left-panel {
+    width: 35%;
+  }
+  .filter-body .left-panel button {
+    font-size: 2vh !important;
+  }
+  .right-panel {
+    margin-left: 5vw;
+    width: 55%;
+    margin-left: 3vw;
+    margin: 0 auto;
+  }
+  .right-panel label p {
+    font-size: 4vw !important;
+  }
+  .right-panel select {
+    font-size: 3vw;
+  }
+  .right-panel select option {
+    font-size: 1.5vw !important;
+    width: 50vw !important;
+  }
+}
