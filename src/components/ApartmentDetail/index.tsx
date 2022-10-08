@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useEffect, useState, memo } from "react";
 import "./style.css";
 import { useParams } from "react-router-dom";
 import {
@@ -190,4 +190,4 @@ const Apartment: FC = () => {
   );
 };
 
-export default Apartment;
+export default memo(Apartment);

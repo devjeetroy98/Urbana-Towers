@@ -1,7 +1,12 @@
 import { DeleteOutlined, SendOutlined } from "@ant-design/icons";
-import React, { FC } from "react";
+import React, { FC, memo } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
+
+const areEqual = (prevProps: any, nextProps: any) => {
+  console.log(prevProps.id === nextProps.id);
+  return prevProps.id === nextProps.id;
+};
 
 const WishlistCards: FC<any> = (props) => {
   const { data } = props;
@@ -75,4 +80,4 @@ const WishlistCards: FC<any> = (props) => {
   );
 };
 
-export default WishlistCards;
+export default memo(WishlistCards, areEqual);
