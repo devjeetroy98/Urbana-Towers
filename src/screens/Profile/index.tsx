@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useState, useEffect, memo } from "react";
 import { Menu } from "antd";
 import {
   BarChartOutlined,
@@ -126,4 +126,4 @@ const Profile: FC = () => {
   );
 };
 
-export default Profile;
+export default memo(Profile);
