@@ -1,0 +1,17 @@
+.create-entry-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+.create-entry-section .steps-content {
+  min-height: 60vh;
+  margin-top: 5px;
+  padding-top: 20px;
+  text-align: center;
+  border: 1px dashed #e9e9e9;
+  border-radius: 2px;
+}
+
+.create-entry-section .steps-action {
+  margin-top: 10px;
+}

@@ -54,38 +54,46 @@
   height: 50vh !important;
   width: auto !important;
 }
-.real-estate-section {
-  margin-top: 5vh;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
-.real-estate-section > * {
-  flex: 0 0 23%;
-  margin: 1% 1%;
-}
-.graph-section {
-  display: flex;
-}
-.graph-section div {
-  width: 45vw;
-  height: 45vh;
-}
 
-.create-entry-section {
-  display: flex;
-  flex-direction: column;
-  min-height: 80vh;
-}
-.create-entry-section .steps-content {
-  min-height: 60vh;
-  margin-top: 5px;
-  padding-top: 20px;
-  text-align: center;
-  border: 1px dashed #e9e9e9;
-  border-radius: 2px;
-}
 
-.create-entry-section .steps-action {
-  margin-top: 10px;
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .profile-section .header {
+    display: block;
+  }
+  .profile-section .header .img img {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+  }
+  .profile-section .header .self p:first-child {
+    margin-top: 2vh;
+    font-size: 3vh;
+  }
+  .profile-section .header .self p:nth-child(2) {
+    font-size: 2.5vh;
+    color: orangered;
+  }
+  .profile-section .header .self p:last-child {
+    font-size: 2vh;
+    margin-top: 1vh;
+  }
+  .real-estate-section {
+    margin-top: 5vh;
+    display: block;
+  }
+  .real-estate-section > * {
+    width: 90vw;
+    margin-top: 3vh;
+  }
+  .graph-section {
+    display: block;
+  }
+  .graph-section div {
+    width: 90vw;
+    height: 45vh;
+  }
 }

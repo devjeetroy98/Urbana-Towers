@@ -74,3 +74,36 @@
   cursor: pointer;
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
 }
+
+@media only screen and (max-width: 768px) {
+  .content {
+    display: block;
+  }
+  .parent-long-card {
+    width: 90vw;
+  }
+  .parent-long-card .long-card {
+    padding-left: 2vh;
+  }
+  .parent-long-card .long-card .left img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+  }
+  .parent-long-card .long-card .mid {
+    padding-left: 1vw;
+    font-size: 2vh;
+  }
+  .parent-long-card .long-card .info {
+    color: white;
+    padding-left: 1vw;
+    font-size: 2vh;
+  }
+  .parent-long-card .request {
+    font-size: 2vh;
+    padding-left: 2vh;
+  }
+  .parent-long-card .action-buttons button {
+    width: 30vw !important;
+  }
+}
