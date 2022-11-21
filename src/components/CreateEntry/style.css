@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 80vh;
+  overflow: hidden;
 }
 .create-entry-section .steps-content {
   min-height: 60vh;
@@ -10,10 +11,30 @@
   text-align: center;
   border: 1px dashed #e9e9e9;
   border-radius: 2px;
+  display: flex;
 }
-
+.create-entry-section .steps-content div {
+  text-align: left;
+  width: 50%;
+}
+.create-entry-section .steps-content .ant-form-item {
+  width: 130% !important;
+}
+.create-entry-section .steps-content .ant-form-item .ant-input,
+.create-entry-section .steps-content .ant-form-item .ant-select-selector,
+.create-entry-section .steps-content .ant-form-item textarea,
+.create-entry-section .ant-select {
+  width: 400px !important;
+}
+textarea.ant-input {
+  max-width: 400px !important;
+}
 .create-entry-section .steps-action {
   margin-top: 10px;
+  display: flex;
+  gap: 10px !important;
+  justify-content: right;
+  padding-right: 100px !important;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
