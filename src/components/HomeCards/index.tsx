@@ -1,4 +1,4 @@
-import { HeartOutlined, SendOutlined } from "@ant-design/icons";
+import { PlusOutlined, SendOutlined } from "@ant-design/icons";
 import React, { FC, memo } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
@@ -44,8 +44,8 @@ const HomeCards: FC<any> = (props) => {
         <button type="button">
           Request Tour <SendOutlined />
         </button>
-        <button type="button">
-          <HeartOutlined />
+        <button type="button" title="Add to Wishlist">
+          <PlusOutlined />
         </button>
       </div>
     </div>

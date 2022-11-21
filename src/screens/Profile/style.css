@@ -3,6 +3,9 @@
   margin-left: 5vw;
   margin-right: 5vw;
 }
+.profile-container .top {
+  background-color: white;
+}
 .profile-container .top .ant-menu-item-selected {
   color: #5e17eb !important;
 }
@@ -23,6 +26,9 @@
   justify-content: flex-start;
   gap: 1vw;
   align-items: center;
+  background-color: white !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 .profile-section .header .img img {
   height: 10vw;
@@ -49,6 +55,9 @@
 .profile-view {
   height: 50vh;
   width: auto;
+  background-color: white !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
 }
 .profile-view canvas {
   height: 50vh !important;
